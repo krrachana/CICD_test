@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'com.cicd.UseCase'
+
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'com.cicd.UseCase'
+        )
+    }
+    archiveBaseName = 'CI_UseCase'
+    archiveVersion = '0.1.0'
+}
